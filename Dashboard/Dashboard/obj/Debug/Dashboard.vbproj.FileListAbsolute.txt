@@ -1,0 +1,40 @@
+c:\users\march\documents\visual studio 2012\Projects\Dashboard\Dashboard\bin\Debug\Dashboard.exe.config
+C:\Users\march\Documents\Visual Studio 2012\Projects\Dashboard\Dashboard\bin\Debug\Dashboard.exe
+C:\Users\march\Documents\Visual Studio 2012\Projects\Dashboard\Dashboard\bin\Debug\Dashboard.pdb
+C:\Users\march\Documents\Visual Studio 2012\Projects\Dashboard\Dashboard\bin\Debug\Dashboard.xml
+C:\Users\march\Documents\Visual Studio 2012\Projects\Dashboard\Dashboard\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\march\Documents\Visual Studio 2012\Projects\Dashboard\Dashboard\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\march\Documents\Visual Studio 2012\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.Resources.resources
+C:\Users\march\Documents\Visual Studio 2012\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.vbproj.GenerateResource.Cache
+C:\Users\march\Documents\Visual Studio 2012\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.exe
+C:\Users\march\Documents\Visual Studio 2012\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.xml
+C:\Users\march\Documents\Visual Studio 2012\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
+C:\Users\march\Documents\Visual Studio 2012\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.Stocks.resources
+C:\Users\march\Documents\Visual Studio 2012\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.Purchase.resources
+C:\Users\march\Documents\Visual Studio 2012\Projects\Dashboard\Dashboard\bin\Debug\Guna.UI2.dll
+C:\Users\march\Documents\Visual Studio 2012\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.vbprojResolveAssemblyReference.cache
+C:\Users\march\Documents\Visual Studio 2012\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.DashBoard.resources
+C:\Users\SKM\Music\Dashboard\Dashboard\bin\Debug\Dashboard.exe.config
+C:\Users\SKM\Music\Dashboard\Dashboard\obj\Debug\Dashboard.exe
+C:\Users\SKM\Music\Dashboard\Dashboard\obj\Debug\Dashboard.xml
+C:\Users\SKM\Music\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
+C:\Users\SKM\Music\Dashboard\Dashboard\bin\Debug\Dashboard.exe
+C:\Users\SKM\Music\Dashboard\Dashboard\bin\Debug\Dashboard.pdb
+C:\Users\SKM\Music\Dashboard\Dashboard\bin\Debug\Dashboard.xml
+C:\Users\SKM\Music\Dashboard\Dashboard\obj\Debug\Dashboard.vbprojResolveAssemblyReference.cache
+C:\Users\SKM\Music\Dashboard\Dashboard\obj\Debug\Dashboard.DashBoard.resources
+C:\Users\SKM\Music\Dashboard\Dashboard\obj\Debug\Dashboard.Resources.resources
+C:\Users\SKM\Music\Dashboard\Dashboard\obj\Debug\Dashboard.Purchase.resources
+C:\Users\SKM\Music\Dashboard\Dashboard\obj\Debug\Dashboard.vbproj.GenerateResource.Cache
+C:\Users\SKM\Music\Dashboard\Dashboard\obj\Debug\Dashboard.Form2.resources
+C:\Users\SKM\Music\Dashboard\Dashboard\bin\Debug\Database2.mdf
+C:\Users\SKM\Music\Dashboard\Dashboard\bin\Debug\Database2_log.ldf
+C:\Users\SKM\Music\Dashboard\Dashboard\obj\Debug\Dashboard.Login2.resources
+C:\Users\SKM\Music\Dashboard\Dashboard\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+C:\Users\SKM\Music\Dashboard\Dashboard\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+C:\Users\SKM\Music\Dashboard\Dashboard\obj\Debug\Dashboard.Stocks.resources
+C:\Users\SKM\Music\Dashboard\Dashboard\obj\Debug\Dashboard.Resgister.resources
+C:\Users\SKM\Music\Dashboard\Dashboard\obj\Debug\Dashboard.Outlet.resources
+C:\Users\SKM\Music\Dashboard\Dashboard\obj\Debug\Dashboard.DashDis.resources
+C:\Users\SKM\Music\Dashboard\Dashboard\obj\Debug\Dashboard.Report.resources
+C:\Users\SKM\Music\Dashboard\Dashboard\obj\Debug\Dashboard.DashIn.resources

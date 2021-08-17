@@ -1,0 +1,704 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Dashboard
+</name>
+</assembly>
+<members>
+<member name="T:Dashboard.OutletPurchaseDataSet1.OutletDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Dashboard.OutletPurchaseDataSet1.OutletRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Dashboard.OutletPurchaseDataSet1.OutletRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Dashboard.OutletPurchaseDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Dashboard.OutletPurchaseDataSet1TableAdapters.OutletTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Dashboard.OutletPurchaseDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Dashboard.OutletPurchaseDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Dashboard.OutletPurchaseDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Dashboard.OutletPurchaseDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Dashboard.OutletPurchaseDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Dashboard.OutletPurchaseDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Dashboard.OutletPurchaseDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Dashboard.OutletPurchaseDataSet1TableAdapters.TableAdapterManager.UpdateAll(Dashboard.OutletPurchaseDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Dashboard.OutletPurchaseDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Dashboard.OutletPurchaseDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Dashboard.OutletPurchaseDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Dashboard.test.OneplusDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Dashboard.test.OneplusRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Dashboard.test.OneplusRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Dashboard.test">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Dashboard.testTableAdapters.OneplusTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Dashboard.testTableAdapters.TableAdapterManager.UpdateUpdatedRows(Dashboard.test,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Dashboard.testTableAdapters.TableAdapterManager.UpdateInsertedRows(Dashboard.test,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Dashboard.testTableAdapters.TableAdapterManager.UpdateDeletedRows(Dashboard.test,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Dashboard.testTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Dashboard.testTableAdapters.TableAdapterManager.UpdateAll(Dashboard.test)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Dashboard.testTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Dashboard.testTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Dashboard.testTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Dashboard.PurchaseDataSet1.purchase3DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Dashboard.PurchaseDataSet1.purchase3Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Dashboard.PurchaseDataSet1.purchase3RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Dashboard.PurchaseDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Dashboard.PurchaseDataSet1TableAdapters.purchase3TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Dashboard.PurchaseDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Dashboard.PurchaseDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Dashboard.PurchaseDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Dashboard.PurchaseDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Dashboard.PurchaseDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Dashboard.PurchaseDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Dashboard.PurchaseDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Dashboard.PurchaseDataSet1TableAdapters.TableAdapterManager.UpdateAll(Dashboard.PurchaseDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Dashboard.PurchaseDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Dashboard.PurchaseDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Dashboard.PurchaseDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Dashboard.PurDataSet1.PurchaseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Dashboard.PurDataSet1.PurchaseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Dashboard.PurDataSet1.PurchaseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Dashboard.PurDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Dashboard.PurDataSet1TableAdapters.PurchaseTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Dashboard.PurDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Dashboard.PurDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Dashboard.PurDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Dashboard.PurDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Dashboard.PurDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Dashboard.PurDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Dashboard.PurDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Dashboard.PurDataSet1TableAdapters.TableAdapterManager.UpdateAll(Dashboard.PurDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Dashboard.PurDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Dashboard.PurDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Dashboard.PurDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Dashboard.OutetDataSet.OutletDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Dashboard.OutetDataSet.OutletRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Dashboard.OutetDataSet.OutletRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Dashboard.OutetDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Dashboard.OutetDataSetTableAdapters.OutletTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Dashboard.OutetDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Dashboard.OutetDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Dashboard.OutetDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Dashboard.OutetDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Dashboard.OutetDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Dashboard.OutetDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Dashboard.OutetDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Dashboard.OutetDataSetTableAdapters.TableAdapterManager.UpdateAll(Dashboard.OutetDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Dashboard.OutetDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Dashboard.OutetDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Dashboard.OutetDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources._1200px_Picture_icon_BLACK_svg">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources._1616845125195">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources._1616846257936">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources._3233333_200">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources._43_438112_registration_icon_png_transparent_png">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources._60378">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources._777496_200">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources._800426_document_512x512">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources._call">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.android_logo_PNG17">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.android_logo_PNG17__2_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.android_logo_PNG17__2__removebg_hi">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.android_logo_PNG17__2__removebg_preview">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.android_logo_PNG17__2__removebg_preview1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.apple_logo_PNG19666">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.arrow_back">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.callus">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.callus1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.callwhite">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.chat">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.chatbackcolor">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.chatwhite">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.clipart1900963">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.confirm_smartphone_icon_with_png_and_vector_format_for_free_confirmation_png_512_512_350x350">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.Daco_438112">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.delete_remove_trash_trash_bin_trash_can_icon_1320073117929397588">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.df8370f1292163c519d35ad66746eefa">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.drive_floppy_disk_guardar_save_storage_icon_1320185923271383710">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.email">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.emailbackcolor_png">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.emailwhite">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.forward_icon_1320166878041096316_512">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.image__1___1_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.Image1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.imageedit_14_2325873602">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.imageedit_2_8670670724">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.imageedit_3_7757376224">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.imageedit_4_8391998195">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.imageedit_5_3013696450">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.imageedit_6_2889602532">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.innerlog">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.kisspng_oneplus_3t_logo_oneplus_5t_sketch_5aff92cb9f2b93_962010771526698699652">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.kisspng_oneplus_3t_logo_oneplus_5t_sketch_5aff92cb9f2b931">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.Logout">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.mi_8a">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.PikPng_com_add_to_cart_png_5457299">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.pngegg">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.samsung_logo_transparent_background_8">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.save_1659426_1408816">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.softwareicons_21_512">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.whatsapp">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.whatsappBackcolor">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.whatsappwhite">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Dashboard.My.Resources.Resources.xiaomi_logo_logos_marcas_8__1_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:Dashboard.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Dashboard.OP.OneplusDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Dashboard.OP.OneplusRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Dashboard.OP.OneplusRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Dashboard.OP">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Dashboard.OPTableAdapters.OneplusTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Dashboard.OPTableAdapters.TableAdapterManager.UpdateUpdatedRows(Dashboard.OP,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Dashboard.OPTableAdapters.TableAdapterManager.UpdateInsertedRows(Dashboard.OP,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Dashboard.OPTableAdapters.TableAdapterManager.UpdateDeletedRows(Dashboard.OP,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Dashboard.OPTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Dashboard.OPTableAdapters.TableAdapterManager.UpdateAll(Dashboard.OP)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Dashboard.OPTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Dashboard.OPTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Dashboard.OPTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Dashboard.Sales2DataSet1.SalesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Dashboard.Sales2DataSet1.SalesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Dashboard.Sales2DataSet1.SalesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Dashboard.Sales2DataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Dashboard.Sales2DataSet1TableAdapters.SalesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Dashboard.Sales2DataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Dashboard.Sales2DataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Dashboard.Sales2DataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Dashboard.Sales2DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Dashboard.Sales2DataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Dashboard.Sales2DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Dashboard.Sales2DataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Dashboard.Sales2DataSet1TableAdapters.TableAdapterManager.UpdateAll(Dashboard.Sales2DataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Dashboard.Sales2DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Dashboard.Sales2DataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Dashboard.Sales2DataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Dashboard.Database2DataSet.iPhoneDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Dashboard.Database2DataSet.MiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Dashboard.Database2DataSet.OneplusDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Dashboard.Database2DataSet.SamsungDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Dashboard.Database2DataSet.iPhoneRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Dashboard.Database2DataSet.MiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Dashboard.Database2DataSet.OneplusRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Dashboard.Database2DataSet.SamsungRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Dashboard.Database2DataSet.iPhoneRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Dashboard.Database2DataSet.MiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Dashboard.Database2DataSet.OneplusRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Dashboard.Database2DataSet.SamsungRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Dashboard.Database2DataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Dashboard.Database2DataSetTableAdapters.iPhoneTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Dashboard.Database2DataSetTableAdapters.MiTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Dashboard.Database2DataSetTableAdapters.OneplusTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Dashboard.Database2DataSetTableAdapters.SamsungTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Dashboard.Database2DataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Dashboard.Database2DataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Dashboard.Database2DataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Dashboard.Database2DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Dashboard.Database2DataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Dashboard.Database2DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Dashboard.Database2DataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Dashboard.Database2DataSetTableAdapters.TableAdapterManager.UpdateAll(Dashboard.Database2DataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Dashboard.Database2DataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Dashboard.Database2DataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Dashboard.Database2DataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>

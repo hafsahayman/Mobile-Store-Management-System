@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD890977-62F0-46CD-9134-32D495A5D6F8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Dashboard.My.MyApplication</StartupObject>
+    <RootNamespace>Dashboard</RootNamespace>
+    <AssemblyName>Dashboard</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\SKM\Desktop\Setup\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Dashboard.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Dashboard.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>CEFFF4E36C465C282FE15DEE649D79C71F1779F4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Mobiltelefon_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
+      <HintPath>..\..\..\docx\program files\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>..\..\..\Desktop\Project Mobile\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>..\..\..\docx\program files\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\docx\program files\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp">
+      <HintPath>..\..\..\..\..\Downloads\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\_Getintopc.com_Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\..\Downloads\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Da.Designer.vb" />
+    <Compile Include="DashBoard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoard.Designer.vb">
+      <DependentUpon>DashBoard.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashDis.Designer.vb">
+      <DependentUpon>DashDis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DashDis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashIn.Designer.vb">
+      <DependentUpon>DashIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DashIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database2DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OP.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OutetDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutetDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Outlet.Designer.vb">
+      <DependentUpon>Outlet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Outlet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutletPurchaseDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutletPurchaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PurDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resgister.Designer.vb">
+      <DependentUpon>Resgister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resgister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginNew.Designer.vb">
+      <DependentUpon>LoginNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Purchase.Designer.vb">
+      <DependentUpon>Purchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RGBColors.vb" />
+    <Compile Include="Sales2DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sales2DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Stocks.Designer.vb">
+      <DependentUpon>Stocks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stocks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>test.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DashBoard.resx">
+      <DependentUpon>DashBoard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashDis.resx">
+      <DependentUpon>DashDis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashIn.resx">
+      <DependentUpon>DashIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Outlet.resx">
+      <DependentUpon>Outlet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resgister.resx">
+      <DependentUpon>Resgister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginNew.resx">
+      <DependentUpon>LoginNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase.resx">
+      <DependentUpon>Purchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stocks.resx">
+      <DependentUpon>Stocks.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Database2DataSet.xsc">
+      <DependentUpon>Database2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database2DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database2DataSet.xss">
+      <DependentUpon>Database2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Mobiltelefon_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="OutetDataSet.xsc">
+      <DependentUpon>OutetDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OutetDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OutetDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OutetDataSet.xss">
+      <DependentUpon>OutetDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OutletPurchaseDataSet1.xsc">
+      <DependentUpon>OutletPurchaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OutletPurchaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OutletPurchaseDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OutletPurchaseDataSet1.xss">
+      <DependentUpon>OutletPurchaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PurchaseDataSet1.xsc">
+      <DependentUpon>PurchaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PurchaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurchaseDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PurchaseDataSet1.xss">
+      <DependentUpon>PurchaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PurDataSet1.xsc">
+      <DependentUpon>PurDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PurDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PurDataSet1.xss">
+      <DependentUpon>PurDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Sales2DataSet1.xsc">
+      <DependentUpon>Sales2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Sales2DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Sales2DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Sales2DataSet1.xss">
+      <DependentUpon>Sales2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="test.xsc">
+      <DependentUpon>test.xsd</DependentUpon>
+    </None>
+    <None Include="test.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>test.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="test.xss">
+      <DependentUpon>test.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database2.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database2_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database2.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\imageedit_3_7757376224.png" />
+    <None Include="Resources\image %281%29 %281%29.png" />
+    <None Include="Resources\xiaomi-logo-logos-marcas-8 %281%29.png" />
+    <None Include="Resources\kisspng-oneplus-3t-logo-oneplus-5t-sketch-5aff92cb9f2b93.9620107715266986996521.png" />
+    <None Include="Resources\kisspng-oneplus-3t-logo-oneplus-5t-sketch-5aff92cb9f2b93.962010771526698699652.png" />
+    <None Include="Resources\samsung-logo-transparent-background-8.png" />
+    <None Include="Resources\apple_logo_PNG19666.png" />
+    <None Include="Resources\Logout.png" />
+    <None Include="Resources\clipart1900963.png" />
+    <None Include="Resources\imageedit_14_2325873602.png" />
+    <None Include="Resources\android_logo_PNG17__2_-removebg-hi.png" />
+    <None Include="Resources\android_logo_PNG17__2_-removebg-preview1.png" />
+    <None Include="Resources\android_logo_PNG17__2_-removebg-preview.png" />
+    <None Include="Resources\android_logo_PNG17 %282%29.jpg" />
+    <None Include="Resources\whatsappwhite.jpg" />
+    <None Include="Resources\whatsappBackcolor.jpg" />
+    <None Include="Resources\android_logo_PNG17.png" />
+    <None Include="Resources\whatsapp1.JPG" />
+    <None Include="Resources\mi 8a1.png" />
+    <None Include="Resources\Image11.bmp" />
+    <None Include="Resources\emailwhite1.jpg" />
+    <None Include="Resources\emailbackcolor.png1.jpg" />
+    <None Include="Resources\email1.jpg" />
+    <None Include="Resources\chatwhite1.jpg" />
+    <None Include="Resources\chatbackcolor1.jpg" />
+    <None Include="Resources\chat1.jpg" />
+    <None Include="Resources\callwhite1.png" />
+    <None Include="Resources\callus11.jpg" />
+    <None Include="Resources\callus2.jpg" />
+    <None Include="Resources\call1.jpg" />
+    <None Include="Resources\arrow-back.png" />
+    <None Include="Resources\imageedit_4_8391998195.png" />
+    <None Include="Resources\60378.png" />
+    <None Include="Resources\imageedit_6_2889602532.png" />
+    <None Include="Resources\pngegg.png" />
+    <None Include="Resources\1616846257936.png" />
+    <None Include="Resources\800426_document_512x512.png" />
+    <None Include="Resources\softwareicons-21-512.png" />
+    <None Include="Resources\imageedit_2_8670670724.png" />
+    <None Include="Resources\1616845125195.png" />
+    <None Include="Resources\confirm-smartphone-icon-with-png-and-vector-format-for-free-confirmation-png-512_512-350x350.png" />
+    <None Include="Resources\forward+icon-1320166878041096316_512.png" />
+    <None Include="Resources\PikPng.com_add-to-cart-png_5457299.png" />
+    <None Include="Resources\Daco_438112.png" />
+    <None Include="Resources\43-438112_registration-icon-png-transparent-png.png" />
+    <None Include="Resources\df8370f1292163c519d35ad66746eefa.png" />
+    <None Include="Resources\save-1659426-1408816.png" />
+    <None Include="OP.xsc">
+      <DependentUpon>OP.xsd</DependentUpon>
+    </None>
+    <None Include="OP.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OP.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OP.xss">
+      <DependentUpon>OP.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\delete+remove+trash+trash+bin+trash+can+icon-1320073117929397588.png" />
+    <None Include="Resources\1200px-Picture_icon_BLACK.svg.png" />
+    <None Include="Resources\drive+floppy+disk+guardar+save+storage+icon-1320185923271383710.png" />
+    <None Include="Resources\3233333-200.png" />
+    <None Include="Resources\imageedit_5_3013696450.png" />
+    <None Include="Resources\loginphoto.jpg" />
+    <None Include="Resources\loginphoto2.jpg" />
+    <None Include="Resources\imageblack.jpg" />
+    <None Include="Resources\c4ddbe4e-830a-4f42-bf98-2c579a9c5038_200x200.png" />
+    <None Include="Resources\Welcome1.jpg" />
+    <None Include="Resources\innerlog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.Express.11.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2012 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.11.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2012 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,70 @@
+********Mobitelephone********
+
+Language Used :- VB.Net
+Backend :- SQL Server 2012
+Frameworks used :- Bunifu V1.52, Guna V2.0.0.1, FontAwesomeSharp (Can be found in Nuget Gallery)
+
+
+******************************************************IMPORTANT******************************************************************************************
+The design of the project is done using the above mentioned framework.Hence it is mandatory to install the above mentioned framework first and then open    
+the project file in VB.Net to avoid errors failing which only a blank form would be visible to the user.							
+**************************************************************************************************************************************************************
+
+
+Mobitelephone is a mobile store management system software.The main objective of developing this software was to give a
+complete package to small organizations at a cost effective price which will allow them to keep track of their sales and inventory
+and provide a computerized billing system which eliminates the ledger based and manual written bills.
+
+There are different modules in this software:-
+---Login---
+It enables the user to login as a staff and admin through the same page.This module directs the user to their respective dashboard 
+based on their role i.e admin and staff.If the user doesnt have an account he could simply click the sign up label which directs them 
+to the registration module.
+
+---Registration---
+This module enables the user to create an account just by entering their basic details and the respective role.Once the account 
+is created the user gets automatically directed to the login module.
+
+---Dashboard---
+Provides a user-friendly page which displays all the features that staff as well as the admin can access based on the role.
+The staff can access only the sales,report and about us module where as the admin can acess the outlet,stock,sales,report and the
+about us modules.For now the features include display of the available stocks for each static brand,the recent stock added,
+the recent customer who made the last transaction  and the total stock available in whole.
+
+---Outlet---
+This module allows the admin to add information about their outlet.These details are displayed on the invoice generated with the 
+help of the software.The admin can registers his outlet only once and can update details later if there are any changes.
+
+---Stock---
+This module enables the admin to add, delete and modify the products which are available for purchase.It has three sub modules 
+which are:
+(i)Add Stock
+       It enables the admin to add the stock to the existing database.
+(i)Edit Stock
+       It enables the admin to update an already existing  product.
+(iii)Delete Stock
+       It enables the admin to delete a product.
+
+---Sales---
+This module enables the admin or staff to make the transaction. It has four sub modules which are:
+(i)Customer Information
+       The staff or admin needs to enter the customer details and the bill no is automatically generated.
+(ii)Model Selection
+       The staff or admin  needs to select the products chosen by the customer and is added to the cart.
+(iii)Cart
+       An overview of the finalised products present in the cart is displayed  and the mode of payment is chosen here.
+(iv)Checkout
+      An overview of the customer information and outlet details are displayed and a computerized invoice is generated based on the 
+      current transaction.
+
+---Report---
+This module has two kinds of report which are
+(i)Transaction History
+    It enables the user to search for the customer details and the transactions made by the respective customer just by simply inputing 
+    the invoice number.
+(ii)Monthly Analysis
+    It enables the user to compare the monthly sales of two brands.The resultant is graphically represented with the help of a bar chart
+    which much easier to understand.
+
+---About Us---
+This module enables the user to directly contact us if he or she faces any issue related to the software.

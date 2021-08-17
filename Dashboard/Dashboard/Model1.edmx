@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Database2Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="Database2ModelStoreContainer">
+          <EntitySet Name="Customer" EntityType="Database2Model.Store.Customer" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Mobile" EntityType="Database2Model.Store.Mobile" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Outlet" EntityType="Database2Model.Store.Outlet" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Sales" EntityType="Database2Model.Store.Sales" store:Type="Tables" store:Schema="dbo" store:Name="Sales">
+            <DefiningQuery>SELECT 
+      [Sales].[Brand] AS [Brand], 
+      [Sales].[Model] AS [Model], 
+      [Sales].[Price ] AS [Price ], 
+      [Sales].[Qty] AS [Qty], 
+      [Sales].[Total] AS [Total], 
+      [Sales].[P_date] AS [P_date], 
+      [Sales].[Bill_No] AS [Bill_No], 
+      [Sales].[RegId] AS [RegId], 
+      [Sales].[MobId] AS [MobId]
+      FROM [dbo].[Sales] AS [Sales]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Signup" EntityType="Database2Model.Store.Signup" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Bill_No" Association="Database2Model.Store.FK_Bill_No">
+            <End Role="Customer" EntitySet="Customer" />
+            <End Role="Sales" EntitySet="Sales" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MobId" Association="Database2Model.Store.FK_MobId">
+            <End Role="Mobile" EntitySet="Mobile" />
+            <End Role="Sales" EntitySet="Sales" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RegId" Association="Database2Model.Store.FK_RegId">
+            <End Role="Signup" EntitySet="Signup" />
+            <End Role="Mobile" EntitySet="Mobile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RegId_S" Association="Database2Model.Store.FK_RegId_S">
+            <End Role="Signup" EntitySet="Signup" />
+            <End Role="Sales" EntitySet="Sales" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="Bill_No" />
+          </Key>
+          <Property Name="Customer_Name" Type="varchar" MaxLength="50" />
+          <Property Name="Customer_Phone" Type="varchar" MaxLength="50" />
+          <Property Name="Customer_Email" Type="varchar" MaxLength="50" />
+          <Property Name="Bill_No" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Payment" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Mobile">
+          <Key>
+            <PropertyRef Name="MobId" />
+          </Key>
+          <Property Name="MobId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Brand" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Model" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Storage" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Ram" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Back" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Front" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+          <Property Name="img" Type="image" />
+          <Property Name="Price" Type="money" />
+          <Property Name="RegId" Type="int" />
+        </EntityType>
+        <EntityType Name="Outlet">
+          <Key>
+            <PropertyRef Name="OId" />
+          </Key>
+          <Property Name="OId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="Locality" Type="varchar" MaxLength="50" />
+          <Property Name="city" Type="varchar" MaxLength="50" />
+          <Property Name="pincode" Type="varchar" MaxLength="50" />
+          <Property Name="state" Type="varchar" MaxLength="50" />
+          <Property Name="pno" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'C:\USERS\SKM\MUSIC\DASHBOARD\DASHBOARD\DATABASE2.MDF.dbo.Sales' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Sales">
+          <Key>
+            <PropertyRef Name="Model" />
+            <PropertyRef Name="Price " />
+            <PropertyRef Name="Total" />
+            <PropertyRef Name="P_date" />
+            <PropertyRef Name="Bill_No" />
+          </Key>
+          <Property Name="Brand" Type="varchar" MaxLength="50" />
+          <Property Name="Model" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Price " Type="money" Nullable="false" />
+          <Property Name="Qty" Type="int" />
+          <Property Name="Total" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="P_date" Type="date" Nullable="false" />
+          <Property Name="Bill_No" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="RegId" Type="int" />
+          <Property Name="MobId" Type="int" />
+        </EntityType>
+        <EntityType Name="Signup">
+          <Key>
+            <PropertyRef Name="RegId" />
+          </Key>
+          <Property Name="RegId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="First_Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Last_Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Gender" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Phone_Number" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Confirm_Password" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Usertype" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Bill_No">
+          <End Role="Customer" Type="Database2Model.Store.Customer" Multiplicity="1" />
+          <End Role="Sales" Type="Database2Model.Store.Sales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customer">
+              <PropertyRef Name="Bill_No" />
+            </Principal>
+            <Dependent Role="Sales">
+              <PropertyRef Name="Bill_No" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MobId">
+          <End Role="Mobile" Type="Database2Model.Store.Mobile" Multiplicity="0..1" />
+          <End Role="Sales" Type="Database2Model.Store.Sales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Mobile">
+              <PropertyRef Name="MobId" />
+            </Principal>
+            <Dependent Role="Sales">
+              <PropertyRef Name="MobId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RegId">
+          <End Role="Signup" Type="Database2Model.Store.Signup" Multiplicity="0..1" />
+          <End Role="Mobile" Type="Database2Model.Store.Mobile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Signup">
+              <PropertyRef Name="RegId" />
+            </Principal>
+            <Dependent Role="Mobile">
+              <PropertyRef Name="RegId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RegId_S">
+          <End Role="Signup" Type="Database2Model.Store.Signup" Multiplicity="0..1" />
+          <End Role="Sales" Type="Database2Model.Store.Sales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Signup">
+              <PropertyRef Name="RegId" />
+            </Principal>
+            <Dependent Role="Sales">
+              <PropertyRef Name="RegId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Database2Model" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Database2Entities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Customers" EntityType="Database2Model.Customer" />
+          <EntitySet Name="Mobiles" EntityType="Database2Model.Mobile" />
+          <EntitySet Name="Outlets" EntityType="Database2Model.Outlet" />
+          <EntitySet Name="Sales" EntityType="Database2Model.Sale" />
+          <EntitySet Name="Signups" EntityType="Database2Model.Signup" />
+          <AssociationSet Name="FK_Bill_No" Association="Database2Model.FK_Bill_No">
+            <End Role="Customer" EntitySet="Customers" />
+            <End Role="Sales" EntitySet="Sales" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MobId" Association="Database2Model.FK_MobId">
+            <End Role="Mobile" EntitySet="Mobiles" />
+            <End Role="Sales" EntitySet="Sales" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RegId" Association="Database2Model.FK_RegId">
+            <End Role="Signup" EntitySet="Signups" />
+            <End Role="Mobile" EntitySet="Mobiles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RegId_S" Association="Database2Model.FK_RegId_S">
+            <End Role="Signup" EntitySet="Signups" />
+            <End Role="Sales" EntitySet="Sales" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="Bill_No" />
+          </Key>
+          <Property Name="Customer_Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Customer_Phone" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Customer_Email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Bill_No" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Payment" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Sales" Relationship="Database2Model.FK_Bill_No" FromRole="Customer" ToRole="Sales" />
+        </EntityType>
+        <EntityType Name="Mobile">
+          <Key>
+            <PropertyRef Name="MobId" />
+          </Key>
+          <Property Name="MobId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Brand" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Model" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Storage" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Ram" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Back" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Front" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="img" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="RegId" Type="Int32" />
+          <NavigationProperty Name="Sales" Relationship="Database2Model.FK_MobId" FromRole="Mobile" ToRole="Sales" />
+          <NavigationProperty Name="Signup" Relationship="Database2Model.FK_RegId" FromRole="Mobile" ToRole="Signup" />
+        </EntityType>
+        <EntityType Name="Outlet">
+          <Key>
+            <PropertyRef Name="OId" />
+          </Key>
+          <Property Name="OId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Locality" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="city" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="pincode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="state" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="pno" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Sale">
+          <Key>
+            <PropertyRef Name="Model" />
+            <PropertyRef Name="Price_" />
+            <PropertyRef Name="Total" />
+            <PropertyRef Name="P_date" />
+            <PropertyRef Name="Bill_No" />
+          </Key>
+          <Property Name="Brand" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Model" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Price_" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="Qty" Type="Int32" />
+          <Property Name="Total" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="P_date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Bill_No" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RegId" Type="Int32" />
+          <Property Name="MobId" Type="Int32" />
+          <NavigationProperty Name="Customer" Relationship="Database2Model.FK_Bill_No" FromRole="Sales" ToRole="Customer" />
+          <NavigationProperty Name="Mobile" Relationship="Database2Model.FK_MobId" FromRole="Sales" ToRole="Mobile" />
+          <NavigationProperty Name="Signup" Relationship="Database2Model.FK_RegId_S" FromRole="Sales" ToRole="Signup" />
+        </EntityType>
+        <EntityType Name="Signup">
+          <Key>
+            <PropertyRef Name="RegId" />
+          </Key>
+          <Property Name="RegId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="First_Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Last_Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Gender" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Phone_Number" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Username" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Confirm_Password" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Usertype" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Mobiles" Relationship="Database2Model.FK_RegId" FromRole="Signup" ToRole="Mobile" />
+          <NavigationProperty Name="Sales" Relationship="Database2Model.FK_RegId_S" FromRole="Signup" ToRole="Sales" />
+        </EntityType>
+        <Association Name="FK_Bill_No">
+          <End Role="Customer" Type="Database2Model.Customer" Multiplicity="1" />
+          <End Role="Sales" Type="Database2Model.Sale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customer">
+              <PropertyRef Name="Bill_No" />
+            </Principal>
+            <Dependent Role="Sales">
+              <PropertyRef Name="Bill_No" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MobId">
+          <End Role="Mobile" Type="Database2Model.Mobile" Multiplicity="0..1" />
+          <End Role="Sales" Type="Database2Model.Sale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Mobile">
+              <PropertyRef Name="MobId" />
+            </Principal>
+            <Dependent Role="Sales">
+              <PropertyRef Name="MobId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RegId">
+          <End Role="Signup" Type="Database2Model.Signup" Multiplicity="0..1" />
+          <End Role="Mobile" Type="Database2Model.Mobile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Signup">
+              <PropertyRef Name="RegId" />
+            </Principal>
+            <Dependent Role="Mobile">
+              <PropertyRef Name="RegId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RegId_S">
+          <End Role="Signup" Type="Database2Model.Signup" Multiplicity="0..1" />
+          <End Role="Sales" Type="Database2Model.Sale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Signup">
+              <PropertyRef Name="RegId" />
+            </Principal>
+            <Dependent Role="Sales">
+              <PropertyRef Name="RegId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Database2ModelStoreContainer" CdmEntityContainer="Database2Entities">
+          <EntitySetMapping Name="Customers">
+            <EntityTypeMapping TypeName="Database2Model.Customer">
+              <MappingFragment StoreEntitySet="Customer">
+                <ScalarProperty Name="Customer_Name" ColumnName="Customer_Name" />
+                <ScalarProperty Name="Customer_Phone" ColumnName="Customer_Phone" />
+                <ScalarProperty Name="Customer_Email" ColumnName="Customer_Email" />
+                <ScalarProperty Name="Bill_No" ColumnName="Bill_No" />
+                <ScalarProperty Name="Payment" ColumnName="Payment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Mobiles">
+            <EntityTypeMapping TypeName="Database2Model.Mobile">
+              <MappingFragment StoreEntitySet="Mobile">
+                <ScalarProperty Name="MobId" ColumnName="MobId" />
+                <ScalarProperty Name="Brand" ColumnName="Brand" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="Storage" ColumnName="Storage" />
+                <ScalarProperty Name="Ram" ColumnName="Ram" />
+                <ScalarProperty Name="Back" ColumnName="Back" />
+                <ScalarProperty Name="Front" ColumnName="Front" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="img" ColumnName="img" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="RegId" ColumnName="RegId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Outlets">
+            <EntityTypeMapping TypeName="Database2Model.Outlet">
+              <MappingFragment StoreEntitySet="Outlet">
+                <ScalarProperty Name="OId" ColumnName="OId" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="Locality" ColumnName="Locality" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="pincode" ColumnName="pincode" />
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="pno" ColumnName="pno" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sales">
+            <EntityTypeMapping TypeName="Database2Model.Sale">
+              <MappingFragment StoreEntitySet="Sales">
+                <ScalarProperty Name="Brand" ColumnName="Brand" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="Price_" ColumnName="Price " />
+                <ScalarProperty Name="Qty" ColumnName="Qty" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="P_date" ColumnName="P_date" />
+                <ScalarProperty Name="Bill_No" ColumnName="Bill_No" />
+                <ScalarProperty Name="RegId" ColumnName="RegId" />
+                <ScalarProperty Name="MobId" ColumnName="MobId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Signups">
+            <EntityTypeMapping TypeName="Database2Model.Signup">
+              <MappingFragment StoreEntitySet="Signup">
+                <ScalarProperty Name="RegId" ColumnName="RegId" />
+                <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+                <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Phone_Number" ColumnName="Phone_Number" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Confirm_Password" ColumnName="Confirm_Password" />
+                <ScalarProperty Name="Usertype" ColumnName="Usertype" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
